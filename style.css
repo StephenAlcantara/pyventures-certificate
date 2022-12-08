@@ -4,6 +4,12 @@
     --bg-cert: url('assets/bg.png');
     --logo: url('assets/logo.png');
 
+    --keith: url('assets/keith.png');
+    --andre: url('assets/andre.png');
+    --noemi: url('assets/noemi.png');
+    --ralph: url('assets/ralph.png');
+    --raul: url('assets/raul.png');
+
     --bd-blue: #004AAD;
     --bd-orange: #FF914D;
     --title-accent: #5271FF;
@@ -89,6 +95,7 @@ body {
     background-image: var(--logo);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .subtitle {
@@ -111,19 +118,46 @@ body {
 }
 
 .desc {
-    font-size: max(.7rem, .7rem + .35vw);
+    font-size: max(.5rem, .5rem + .35vw);
     color: var(--desc-accent);
     font-weight: bold;
 }
 
 .signatures {
+    font-size: max(.7rem, .7rem + .35vw);
     width: 100%;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding-inline: 1rem;
     gap: 2rem;
     text-align: center;
+    margin-top: 6rem;
+}
+
+.sign {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.keith {
+    background-image: var(--keith);
+}
+
+.andre {
+    background-image: var(--andre);
+}
+
+.noemi {
+    background-image: var(--noemi);
+}
+
+.ralph {
+    background-image: var(--ralph);
+}
+
+.raul {
+    background-image: var(--raul);
 }
