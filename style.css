@@ -161,3 +161,43 @@ body {
 .raul {
     background-image: var(--raul);
 }
+
+@media screen and (max-width: 800px) {
+    .header {
+        width: 100%;
+    }
+
+    .upper-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .signatures {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 5rem;
+    }
+
+    .holder {
+        margin-top: 2rem;
+    }
+
+    .holder:last-of-type {
+        grid-column: span 2;
+    }
+}
